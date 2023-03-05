@@ -32,7 +32,7 @@ export default function Navigation() {
                     router?.pathname === '/' ? 'active' : ''
                   }`}
                 >
-                  {t('header.Home')}
+                  {t('common:home')}
                 </a>
               </Link>
             </li>
@@ -43,7 +43,7 @@ export default function Navigation() {
                     router?.pathname === '/about' ? 'active' : ''
                   }`}
                 >
-                  {t('header.About')}
+                  {t('common:about')}
                 </a>
               </Link>
             </li>

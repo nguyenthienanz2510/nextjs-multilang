@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Navigation from "../components/navigation";
+import { MyLinks } from "../components/MyLink";
 
 export default function About() {
   const { t } = useTranslation("");
@@ -9,8 +10,9 @@ export default function About() {
     <>
       <Navigation />
       <div className="mt-5">
-        <h1>{t("about.About title")}</h1>
-        <p>{t("about.About description")}</p>
+        <p>{t("home:welcome")}</p>
+        <p>{t("home:introduction")}</p>
+        <MyLinks />
       </div>
     </>
   );
@@ -19,7 +21,7 @@ export default function About() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["common", "home"])),
     },
   };
 }

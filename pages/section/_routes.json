@@ -7,13 +7,13 @@
   "football": {
     "default": "article",
     "en": "football",
-    "ar": "article-ar",
+    "de": "article-ar",
     "vi": "bong-da"
   },
   "basketball": {
     "default": "article",
     "en": "basketball",
-    "ar": "article-ar",
+    "de": "article-ar",
     "vi": "bong-ro"
   }
 }
