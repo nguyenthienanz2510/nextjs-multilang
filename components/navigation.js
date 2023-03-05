@@ -11,7 +11,7 @@ export default function Navigation() {
 
   useEffect(() => {
     let dir = router.locale == "ar" ? "rtl" : "ltr";
-    let lang = router.locale == "ar" ? "ar" : "en";
+    let lang = router.locale == "ar" ? "ar" : router.locale == "vi" ? "vi": "en";
     document.querySelector("html").setAttribute("dir", dir);
     document.querySelector("html").setAttribute("lang", lang);
   }, [router.locale]);
