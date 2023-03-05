@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { MyLinks } from "../components/MyLink";
 import Navigation from "../components/navigation";
 
 export default function Home(props) {
@@ -18,6 +19,7 @@ export default function Home(props) {
         <p>{t("home:myAge")}</p>
         <p>{t("home:myName")}</p>
         <p>{props.hihi}</p>
+        <MyLinks />
       </div>
     </>
   );

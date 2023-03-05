@@ -1,0 +1,19 @@
+{
+  "/": {
+    "default": "section",
+    "en": "section",
+    "vi": "bai-viet"
+  },
+  "football": {
+    "default": "article",
+    "en": "football",
+    "ar": "article-ar",
+    "vi": "bong-da"
+  },
+  "basketball": {
+    "default": "article",
+    "en": "basketball",
+    "ar": "article-ar",
+    "vi": "bong-ro"
+  }
+}

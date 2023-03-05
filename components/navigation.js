@@ -1,19 +1,20 @@
-import LocaleSwitcher from "./locale-switcher";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
-import { useEffect } from "react";
+import LocaleSwitcher from './locale-switcher';
+import Link from 'next-translate-routes/link';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import { useEffect } from 'react';
 
 export default function Navigation() {
   const router = useRouter();
 
-  const { t } = useTranslation("");
+  const { t } = useTranslation('');
 
   useEffect(() => {
-    let dir = router.locale == "ar" ? "rtl" : "ltr";
-    let lang = router.locale == "ar" ? "ar" : router.locale == "vi" ? "vi": "en";
-    document.querySelector("html").setAttribute("dir", dir);
-    document.querySelector("html").setAttribute("lang", lang);
+    let dir = router.locale == 'ar' ? 'rtl' : 'ltr';
+    let lang =
+      router.locale == 'ar' ? 'ar' : router.locale == 'vi' ? 'vi' : 'en';
+    document.querySelector('html').setAttribute('dir', dir);
+    document.querySelector('html').setAttribute('lang', lang);
   }, [router.locale]);
 
   return (
@@ -28,10 +29,10 @@ export default function Navigation() {
               <Link href="/">
                 <a
                   className={`nav-link ${
-                    router?.pathname === "/" ? "active" : ""
+                    router?.pathname === '/' ? 'active' : ''
                   }`}
                 >
-                  {t("header.Home")}
+                  {t('header.Home')}
                 </a>
               </Link>
             </li>
@@ -39,10 +40,32 @@ export default function Navigation() {
               <Link href="/about">
                 <a
                   className={`nav-link ${
-                    router?.pathname === "/about" ? "active" : ""
+                    router?.pathname === '/about' ? 'active' : ''
                   }`}
                 >
-                  {t("header.About")}
+                  {t('header.About')}
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/section/basketball">
+                <a
+                  className={`nav-link ${
+                    router?.pathname === '/section/basketball' ? 'active' : ''
+                  }`}
+                >
+                  basketball
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/section/football">
+                <a
+                  className={`nav-link ${
+                    router?.pathname === '/section/football' ? 'active' : ''
+                  }`}
+                >
+                  football
                 </a>
               </Link>
             </li>
