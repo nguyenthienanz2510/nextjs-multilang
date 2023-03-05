@@ -17,13 +17,9 @@ export default function LocaleSwitcher() {
         const { pathname, query, asPath } = router;
         console.log(pathname, query, asPath);
         return (
-          <span key={'locale-' + locale}>
-            <Link href={{ pathname, query }} as={asPath} locale={locale}>
               <a
-                onClick={() => {
-                  console.log('CLICK');
-                  window.location.href=`/${locale}/${asPath}`
-                }}
+                href={`/${locale}${asPath}`}
+                key={'locale-' + locale}
               >
                 {locale === 'en'
                   ? 'English'
@@ -33,8 +29,6 @@ export default function LocaleSwitcher() {
                   ? 'Tieng Viet'
                   : null}
               </a>
-            </Link>
-          </span>
         );
       })}
     </span>

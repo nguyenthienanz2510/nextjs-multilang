@@ -48,10 +48,10 @@ export default function Navigation() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/section/basketball">
+              <Link href="/travel-guide/basketball">
                 <a
                   className={`nav-link ${
-                    router?.pathname === '/section/basketball' ? 'active' : ''
+                    router?.pathname === '/travel-guide/basketball' ? 'active' : ''
                   }`}
                 >
                   basketball
@@ -59,10 +59,10 @@ export default function Navigation() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/section/football">
+              <Link href="/travel-guide/football">
                 <a
                   className={`nav-link ${
-                    router?.pathname === '/section/football' ? 'active' : ''
+                    router?.pathname === '/travel-guide/football' ? 'active' : ''
                   }`}
                 >
                   football

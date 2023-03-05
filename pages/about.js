@@ -4,7 +4,7 @@ import Navigation from "../components/navigation";
 import { MyLinks } from "../components/MyLink";
 
 export default function About() {
-  const { t } = useTranslation("");
+  const { t } = useTranslation(["home", "common"]);
 
   return (
     <>

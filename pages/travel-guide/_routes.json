@@ -1,0 +1,20 @@
+{
+  "/": {
+    "default": "travel-guide",
+    "en": "travel-guide",
+    "vi": "cam-nang-du-lich",
+    "de": "Reisefuhrer"
+  },
+  "football": {
+    "default": "football",
+    "en": "football",
+    "de": "football-de",
+    "vi": "bong-da"
+  },
+  "basketball": {
+    "default": "basketball",
+    "en": "basketball",
+    "de": "basketball-de",
+    "vi": "bong-ro"
+  }
+}
