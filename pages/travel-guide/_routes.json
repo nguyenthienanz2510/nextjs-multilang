@@ -2,19 +2,19 @@
   "/": {
     "default": "travel-guide",
     "en": "travel-guide",
-    "vi": "cam-nang-du-lich",
-    "de": "Reisefuhrer"
+    "vi-VN": "cam-nang-du-lich",
+    "de-DE": "Reisefuhrer"
   },
   "football": {
     "default": "football",
     "en": "football",
-    "de": "football-de",
-    "vi": "bong-da"
+    "de-DE": "football-de",
+    "vi-VN": "bong-da"
   },
   "basketball": {
     "default": "basketball",
     "en": "basketball",
-    "de": "basketball-de",
-    "vi": "bong-ro"
+    "de-DE": "basketball-de",
+    "vi-VN": "bong-ro"
   }
 }

@@ -2,8 +2,8 @@
     "/": {
     },
     "about": {
-      "vi": "ve-chung-toi",
+      "vi-VN": "ve-chung-toi",
       "en": "about",
-      "de": "about-de"
+      "de-DE": "about-de"
     }
   }

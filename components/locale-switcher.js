@@ -23,9 +23,9 @@ export default function LocaleSwitcher() {
               >
                 {locale === 'en'
                   ? 'English'
-                  : locale === 'de'
+                  : locale === 'de-DE'
                   ? 'German'
-                  : locale === 'vi'
+                  : locale === 'vi-VN'
                   ? 'Tieng Viet'
                   : null}
               </a>
